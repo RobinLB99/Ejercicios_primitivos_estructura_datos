@@ -114,4 +114,57 @@ public class Arreglo {
 
         System.out.println("Invertido: " + Arrays.toString(arreglo));
     }
+
+    /**
+     * Escribe un programa que calcule el promedio de todos los elementos de un
+     * arreglo de enteros.
+     */
+    public void promedio(int[] arreglo) {
+        float promedio = 0;
+        for (int i = 0; i < arreglo.length; i++) {
+            promedio += arreglo[i];
+        }
+        promedio = promedio / arreglo.length;
+        System.out.println("El promedio del arreglo '" + Arrays.toString(arreglo) + "' es: " + promedio);
+    }
+
+    /**
+     * Escribe un programa que encuentre el elemento que aparece más veces en
+     * un arreglo de enteros.
+     */
+    public void frecuente(int[] arreglo) {
+        int frecuente = 0;
+        int count = 0;
+        for (int i = 0; i < arreglo.length; i++) {
+            int tempCount = 0;
+            for (int j = 1; j < arreglo.length; j++) {
+                if (i != j && arreglo[i] == arreglo[j]) {
+                    tempCount += 1;
+                }
+            }
+            if (count < tempCount) {
+                frecuente = arreglo[i];
+                count = tempCount;
+            }
+        }
+
+        System.out.println(Arrays.toString(arreglo));
+        System.out.println("El elemento mas frecuente es: " + frecuente);
+    }
+
+    /**
+     * Escribe un programa que verifique si un arreglo de enteros está ordenado
+     * de menor a mayor.
+     */
+    public void isSorted(int[] arreglo) {
+        int[] temp = arreglo.clone();
+        Arrays.sort(temp);
+
+        String isSorted = Arrays.equals(arreglo, temp)
+                ? "El arreglo esta ordenado de menor a mayor."
+                : "El arreglo no esta ordenado de menor a mayor.";
+
+        System.out.println(Arrays.toString(arreglo));
+        System.out.println(isSorted);
+    }
 }

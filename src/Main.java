@@ -98,6 +98,22 @@ public class Main {
         System.out.println("\n7. Escribe un programa que invierta el orden de los elementos en un arreglo.");
         arreglo.inverterArray(arregloInt2);
 
+        //Ejercicio 8
+        System.out.println("\n8. Escribe un programa que calcule el promedio de todos los elementos de un arreglo de enteros.");
+        int[] arrInt = {5, 7, 7, 4, 5, 9, 10, 9, 8, 9};
+        arreglo.promedio(arrInt);
+
+        // Ejercicio 9
+        System.out.println("\n9. Escribe un programa que encuentre el elemento que aparece más veces en un arreglo de enteros.");
+        arreglo.frecuente(arrInt);
+
+        // Ejercicio 10
+        System.out.println("\n10. Escribe un programa que verifique si un arreglo de enteros está ordenado de menor a mayor.");
+        int[] ordenado = {1, 2, 3, 4, 5};
+        int[] desordenado = {2, 1, 5, 4, 3};
+        arreglo.isSorted(ordenado);
+        arreglo.isSorted(desordenado);
+
 
 
         /**
