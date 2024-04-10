@@ -75,6 +75,29 @@ public class Main {
         System.out.println("\n2. Programa invertir el arreglo de char \n ----------------");
         arreglo.invertirArrChar();
 
+        // Ejercicio 3
+        System.out.println("\n3. Escribe un programa que sume todos los elementos de un arreglo de enteros.");
+        int[] arregloInt = {5, 7, 8, 10, 2, 10, 6};
+        arreglo.sumarElementosArreglo(arregloInt);
+
+        // Ejercicio 4
+        System.out.println("\n4. Escribe un programa que encuentre el elemento más grande en un arreglo de enteros.");
+        int[] arregloInt2 = {5, 7, 8, 10, 2, 6};
+        arreglo.numeroMayor(arregloInt2);
+
+        // Ejercicio 5
+        System.out.println("\n5. Escribe un programa que encuentre el elemento más pequeño en un arreglo de enteros.");
+        arreglo.numeroMenor(arregloInt2);
+
+        // Ejercicio 6
+        System.out.println("\n6. Escribe un programa que verifique si un arreglo de enteros contiene elementos duplicados.");
+        arreglo.containDuplicate(arregloInt2);
+        arreglo.containDuplicate(arregloInt);
+
+        // Ejercicio 7
+        System.out.println("\n7. Escribe un programa que invierta el orden de los elementos en un arreglo.");
+        arreglo.inverterArray(arregloInt2);
+
 
 
         /**
