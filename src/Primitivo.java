@@ -72,7 +72,7 @@ public class Primitivo {
      */
     public void convertToCelcius(float Fahrenheit) {
         float Celsius = (Fahrenheit - 32) * 5/9;
-        System.out.println(Fahrenheit + "° C es igual a " +  Celsius + " °C");
+        System.out.println(Fahrenheit + "°F es igual a " +  Celsius + " °C");
     }
 
     /**
@@ -93,6 +93,50 @@ public class Primitivo {
         Matcher match = pattern.matcher(String.valueOf(caracter));
 
         if (match.find()) System.out.println("Es una vocal");
-        else System.out.println("No es una vocal");
+        else System.out.println("Es una consonante");
+    }
+
+    /**
+     * Escribe un programa que calcule el cuadrado de un número entero.
+     */
+    public void cuadrado(int num) {
+        double cuadrado = Math.pow(num, 2);
+        System.out.println("El cuadrado del numero " + num + " es: " + cuadrado);
+    }
+
+    /**
+     * Escribe un programa que calcule la raíz cuadrada de un número (usa Math.sqrt()).
+     */
+    public void raizCuadrada(double num) {
+        double raiz = Math.sqrt(num);
+        System.out.println("La raiz cuadrada de " + num + " es: " + raiz);
+    }
+
+    /**
+     * Escribe un programa que implemente la operación lógica XOR
+     * (o exclusivo) entre dos booleanos.
+     */
+    public void xor(boolean boolean1, boolean boolean2) {
+        boolean xor = false;
+        if (boolean1 || boolean2) xor = true;
+        if (boolean1 == boolean2) xor = false;
+        System.out.println("Salida XOR entre " + boolean1 + " y " + boolean2 + " es: " + xor);
+    };
+
+    /**
+     * Escribe un programa que convierta un carácter en minúscula a mayúscula y viceversa.
+     */
+    public void converTypeCase(char caracter) {
+        Pattern pattern1 = Pattern.compile("^[A-ZÑ]$");
+        Pattern pattern2 = Pattern.compile("^[a-zñ]$");
+        Matcher UpperCase = pattern1.matcher(String.valueOf(caracter));
+        Matcher LowerCase = pattern2.matcher(String.valueOf(caracter));
+
+        Character c = null;
+
+        if (UpperCase.find()) c = Character.toLowerCase(caracter);
+        if (LowerCase.find()) c = Character.toUpperCase(caracter);
+
+        System.out.println("El caracter '" + caracter + "' se transformo a '" + c + "'");
     }
 }

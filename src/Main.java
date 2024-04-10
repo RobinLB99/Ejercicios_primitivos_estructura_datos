@@ -35,12 +35,31 @@ public class Main {
         System.out.println("\n5. Escribe un programa que convierta grados Fahrenheit a Celsius.");
         primitivo.convertToCelcius(68);
 
+        // Ejercicio 6
         System.out.println("\n6. Escribe un programa que compare dos números enteros y devuelva true si son iguales y false si no lo son.");
         primitivo.isEquals(4, 5);
         primitivo.isEquals(8, 8);
 
-        System.out.println("");
+        // Ejercicio 7
+        System.out.println("\n7. Escribe un programa que verifique si un carácter es una vocal o una consonante.");
         primitivo.isVocal('a');
+        primitivo.isVocal('b');
+
+        // Ejercicio 8
+        System.out.println("\n8. Escribe un programa que calcule la raíz cuadrada de un número (usa Math.sqrt()).");
+        primitivo.raizCuadrada(51);
+
+        // Ejercicio 9
+        System.out.println("\n9. Escribe un programa que implemente la operación lógica XOR (o exclusivo) entre dos booleanos.");
+        primitivo.xor(true, true);
+        primitivo.xor(false, false);
+        primitivo.xor(false, true);
+
+        // Ejercicio 10
+        System.out.println("\n10. Escribe un programa que convierta un carácter en minúscula a mayúscula y viceversa.");
+        primitivo.converTypeCase('A');
+        primitivo.converTypeCase('s');
+
 
         /**
          * EJERCICIOS DE ARREGLOS ---------------------------------------
