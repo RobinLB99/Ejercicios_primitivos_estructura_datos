@@ -25,5 +25,9 @@ bin/
 ### VS Code ###
 .vscode/
 
+### Intellij ###
+/.idea
+Ejercicios_primitivos_estructura_datos.iml
+
 ### Mac OS ###
 .DS_Store

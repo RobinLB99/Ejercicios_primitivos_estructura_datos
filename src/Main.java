@@ -23,7 +23,24 @@ public class Main {
         primitivo.compararFlotantes(47.14, 45.78);
         primitivo.compararFlotantes(5.3, 5.3);
 
+        // Ejercicio 3
+        System.out.println("\n3. Escribe un programa que calcule el factorial de un número entero.");
+        primitivo.factorial(10);
 
+        // Ejercicio 4
+        System.out.println("\n4. Escribe un programa que calcule el área de un círculo dado su radio (usa Math.PI para el valor de pi).");
+        primitivo.areaCirculo(5);
+
+        // Ejercicio 5
+        System.out.println("\n5. Escribe un programa que convierta grados Fahrenheit a Celsius.");
+        primitivo.convertToCelcius(68);
+
+        System.out.println("\n6. Escribe un programa que compare dos números enteros y devuelva true si son iguales y false si no lo son.");
+        primitivo.isEquals(4, 5);
+        primitivo.isEquals(8, 8);
+
+        System.out.println("");
+        primitivo.isVocal('a');
 
         /**
          * EJERCICIOS DE ARREGLOS ---------------------------------------
