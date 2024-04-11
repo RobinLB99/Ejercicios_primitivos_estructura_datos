@@ -114,6 +114,35 @@ public class Main {
         arreglo.isSorted(ordenado);
         arreglo.isSorted(desordenado);
 
+        // Ejercicio 11
+        System.out.println("\n11. Escribe un programa que ordene alfabéticamente un arreglo de cadenas.");
+        String[] strings = {"Hola", "mundo",  "Saludos", "Hola", "Fantastico"};
+        arreglo.sortStrings(strings);
+
+        // Ejercicio 12
+        System.out.println("\n12. Escribe un programa que sume dos matrices representadas como arreglos bidimensionales.");
+        int[][] matriz1 = { {5, 3, 5}, {5, 8, 3} };
+        int[][] matriz2 = { {5, 4, 2}, {1, 2, 3} };
+
+        arreglo.sumarMatrices(matriz1, matriz2);
+
+        // Ejercicio 13
+        System.out.println("\n13. Escribe un programa que cuente el número de true en un arreglo de booleanos.");
+        boolean[] bool = {true, false, true, true, false, true, false};
+        arreglo.countTrue(bool);
+
+        // Ejercicio 14
+        System.out.println("\n14. Escribe un programa que genere un arreglo con los primeros n números primos.");
+        arreglo.generarPrimos(5);
+
+        // Ejercicio 15
+        System.out.println("\n15. Escribe un programa que genere un arreglo con los primeros n números de la serie de Fibonacci.");
+        arreglo.generarFibinacci(10);
+
+        // Ejercicio 16
+        System.out.println("\n16. Escribe un programa que separe los números pares e impares de un arreglo dado en dos arreglos diferentes.");
+        int[] parImpar = {5, 2, 7, 5, 7, 8, 10, 1};
+        arreglo.separateParImpar(parImpar);
 
 
         /**

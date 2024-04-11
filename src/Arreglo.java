@@ -167,4 +167,109 @@ public class Arreglo {
         System.out.println(Arrays.toString(arreglo));
         System.out.println(isSorted);
     }
+
+    /**
+     * Escribe un programa que ordene alfabéticamente un arreglo de cadenas.
+     */
+    public void sortStrings(String[] cadena) {
+        System.out.println("Array: " + Arrays.toString(cadena));
+        String[] temp = cadena.clone();
+        Arrays.sort(temp);
+        System.out.println("Ordenado: " + Arrays.toString(temp));
+    }
+
+    /**
+     * Escribe un programa que sume dos matrices representadas como arreglos
+     * bidimensionales.
+     */
+    public void sumarMatrices(int[][] matriz1, int[][] matriz2) {
+        int[][] temp = new int[2][3];
+
+        for (int i = 0; i < matriz1.length; i++) {
+            for (int j = 0; j < matriz2[i].length; j++) {
+                temp[i][j] = matriz1[i][j] + matriz2[i][j];
+            }
+        }
+
+        System.out.println("Matriz 1: " + Arrays.deepToString(matriz1));
+        System.out.println("Matriz 2: " + Arrays.deepToString(matriz2));
+        System.out.println("La matriz resultante de la suma de las dos matrices es: " + Arrays.deepToString(temp));
+    }
+
+    /**
+     * Escribe un programa que cuente el número de true en un arreglo de booleanos.
+     */
+    public void countTrue(boolean[] arreglo) {
+        int count = 0;
+        for (int i = 0; i < arreglo.length; i++) {
+            if (arreglo[i]) count += 1;
+        }
+        System.out.println("Arreglo: " + Arrays.toString(arreglo));
+        System.out.println("El numero de booleanos 'true' es: " + count);
+    }
+
+    /**
+     * Escribe un programa que genere un arreglo con los primeros n
+     * números primos.
+     */
+    public void generarPrimos(int generar) {
+
+    }
+
+    /**
+     * Escribe un programa que genere un arreglo con los primeros n
+     * números de la serie de Fibonacci.
+     */
+    public void generarFibinacci(int generar) {
+        int anterior = -1;
+        int actual = 1;
+        Integer temp;
+
+        int[] arreglo = new int[generar];
+
+        for (int inArray = 0; inArray < generar; inArray++) {
+            temp = actual;
+            actual = anterior + actual;
+            arreglo[inArray] = actual;
+            anterior = temp;
+        }
+
+        System.out.println("Fibonacci array: " + Arrays.toString(arreglo));
+    }
+
+    /**
+     * Escribe un programa que separe los números pares e impares de un
+     * arreglo dado en dos arreglos diferentes.
+     */
+    public void separateParImpar(int[] arreglo) {
+        int parCount = 0;
+        int imparCount = 0;
+
+        for (int i = 0; i < arreglo.length; i++) {
+            if (arreglo[i] % 2 == 0) {
+                parCount++;
+            } else {
+                imparCount++;
+            }
+        }
+
+        int[] par = new int[parCount];
+        int[] impar = new int[imparCount];
+
+        int indexPar = 0;
+        int indexImpar = 0;
+
+        for (int index = 0; index < arreglo.length; index++) {
+            if (arreglo[index] % 2 == 0) {
+                par[indexPar] = arreglo[index];
+                indexPar++;
+            } else {
+                impar[indexImpar] = arreglo[index];
+                indexImpar++;
+            }
+        }
+
+        System.out.println("Par: " + Arrays.toString(par));
+        System.out.println("Impar: " + Arrays.toString(impar));
+    }
 }
